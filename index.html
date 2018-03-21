@@ -3,34 +3,62 @@ layout: default
 title-after: Welcome to my shop!
 ---
 
-<header>
-  <nav>
-    <p>Dan's Shop</p>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="nav">
+  <p>Dan's Shop</p>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="header">
   <div class="intro">
     <h1>Dan's Shop</h1>
     <p>The Store for everyone</p>
-    <a href="#">Shop Now</a>
+    <a class="header__a" href="#">Shop Now</a>
   </div>
 </header>
 <main>
 
   <div class="shop">
     <div class="">
-      <p>Pizza</p>
+      <button
+          class="snipcart-add-item"
+          data-item-id="2"
+          data-item-name="Pizza"
+          data-item-price="5.00"
+          data-item-weight="20"
+          data-item-url="/"
+          data-item-description="Pizza fresh from the oven">
+              Buy Pizza
+      </button>
     </div>
     <div class="">
-      <p>Burrito</p>
+      <button
+          class="snipcart-add-item"
+          data-item-id="3"
+          data-item-name="Burrito"
+          data-item-price="3.00"
+          data-item-weight="20"
+          data-item-url="/"
+          data-item-description="cooked to order, extremely fresh burrito">
+              Buy Burrito
+      </button>
     </div>
     <div class="">
-      <p>Taco</p>
+      <button
+        class="snipcart-add-item"
+        data-item-id="4"
+        data-item-name="Taco"
+        data-item-price="1.00"
+        data-item-weight="20"
+        data-item-url="/"
+        data-item-description="Some fresh tacos">
+            Buy Taco
+      </button>
     </div>
   </div>
 
