@@ -1,0 +1,5 @@
+<svg class="menu" viewBox="0 0 26 17" width="30px" height="100%" class="">
+    <rect class="menu__rect" x="3" width="20" height="3" rx="1.5" ry="1.5"></rect>
+    <rect class="menu__rect" x="3" y="14" width="20" height="3" rx="1.5" ry="1.5"></rect>
+    <rect class="menu__rect" y="7" width="26" height="3" rx="1.5" ry="1.5"></rect>
+</svg>

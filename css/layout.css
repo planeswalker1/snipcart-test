@@ -1,6 +1,10 @@
 .header {
   height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(../images/fruit.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   display: flex;
   align-items: center;
@@ -8,7 +12,7 @@
   flex-direction: column;
 }
 
-.intro {
+.header__intro {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +20,7 @@
   flex: 1 1 100%;
 }
 
-.intro,
+.header__intro,
 .header__a {
   color: #fff;
 }

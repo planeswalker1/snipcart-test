@@ -1,0 +1,170 @@
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+/* nav styles */
+
+nav {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 3em;
+}
+
+.nav--position {
+  position: static;
+}
+
+.nav--desktop {
+  display: none;
+}
+
+.nav--desktop__a,
+.nav--responsive__a {
+  color: black;
+  text-decoration: none;
+}
+
+.nav--desktop__a:hover,
+.nav--responsive__a:hover {
+  text-decoration: underline;
+}
+
+.nav__p {
+  margin: 0;
+}
+
+.nav--responsive {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20%;
+  height: 100%;
+}
+
+.nav--responsive__li {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* svg styles */
+.menu {
+  margin: 0 15px;
+  height: auto;
+  fill: #111;
+  position: fixed;
+  right: 0;
+  z-index: 2;
+}
+
+.menu__rect {
+  transition: all 0.5s;
+}
+
+.menu__rect--1 {
+  transform: rotate(35deg) translate(3px, -1px);
+}
+
+.menu__rect--2 {
+  transform: rotate(-35deg) translate(-7px, 0);
+}
+
+.menu__rect--3 {
+  opacity: 0;
+}
+
+/* shop styles */
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.shop__h3 {
+  color: #fff;
+}
+
+.shop__btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.shop__item--1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/pizza.jpg);
+}
+
+.shop__item--2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/burrito.jpg);
+}
+
+.shop__item--3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(../images/taco.jpg);
+}
+
+.shop__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 30%;
+  height: 300px;
+}
+
+@media screen and (max-width: 961px){
+  .header {
+    height: 100vh;
+  }
+  .shop__item {
+    margin: 10px 0;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 961px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1360px;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 0 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav--desktop {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav--desktop__li {
+    margin: 0 10px;
+  }
+}

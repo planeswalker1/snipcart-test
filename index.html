@@ -3,30 +3,20 @@ layout: default
 title-after: Welcome to my shop!
 ---
 
-<nav class="nav">
-  <p>Dan's Shop</p>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#shop">Shop</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="faq.html">FAQ</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<header class="header">
-  <div class="intro">
+{% include nav.html %}
+<header id="home" class="header">
+  <div class="header__intro">
     <h1>Dan's Shop</h1>
     <p>The Store for everyone</p>
-    <a class="header__a" href="#">Shop Now</a>
+    <a class="header__a" href="/#shop">Shop Now</a>
   </div>
 </header>
 <main>
-
-  <div class="shop">
-    <div class="">
+  <div id="shop" class="shop">
+    <div class="shop__item shop__item--1">
+      <h3 class="shop__h3">Pizza: $5</h3>
       <button
-          class="snipcart-add-item"
+          class="snipcart-add-item shop__btn"
           data-item-id="2"
           data-item-name="Pizza"
           data-item-price="5.00"
@@ -36,10 +26,11 @@ title-after: Welcome to my shop!
               Buy Pizza
       </button>
     </div>
-    <div class="">
+    <div class="shop__item shop__item--2">
+      <h3 class="shop__h3">Burrito: $3</h3>
       <button
-          class="snipcart-add-item"
-          data-item-id="3"
+          class="snipcart-add-item shop__btn"
+          data-itm-id="3"
           data-item-name="Burrito"
           data-item-price="3.00"
           data-item-weight="20"
@@ -48,9 +39,10 @@ title-after: Welcome to my shop!
               Buy Burrito
       </button>
     </div>
-    <div class="">
+    <div class="shop__item shop__item--3">
+      <h3 class="shop__h3">Taco: $1</h3>
       <button
-        class="snipcart-add-item"
+        class="snipcart-add-item shop__btn"
         data-item-id="4"
         data-item-name="Taco"
         data-item-price="1.00"
@@ -62,7 +54,7 @@ title-after: Welcome to my shop!
     </div>
   </div>
 
-  <div class="about">
+  <div id="about" class="about">
     <div class="about__info">
       <div class="">
         <h3>About Us</h3>
@@ -82,12 +74,12 @@ title-after: Welcome to my shop!
       </div>
       <div class="">
         <p>BUY ONLINE NOW & GET 10% OFF !</p>
-        <a href="#">SHOP NOW</a>
+        <a href="/#shop">SHOP NOW</a>
       </div>
     </div>
   </div>
 
-  <div class="contact">
+  <div id="contact" class="contact">
     <h2>FOR SPECIAL REQUESTS & ORDERS</h2>
     <form>
       <input type="text" name="" value="">
